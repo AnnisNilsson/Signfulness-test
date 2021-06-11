@@ -1,0 +1,104 @@
+/* const useStyles = makeStyles((theme) => ({
+  container: {
+    [theme.breakpoints.down('sm')]: {
+      display: 'flex',
+      flexDirection: 'column-reverse',
+    },
+  },
+  descriptionContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-evenly',
+  },
+  btnContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '50%',
+    [theme.breakpoints.down('sm')]: {
+      width: '70%',
+    },
+  },
+  imageContainer: {
+    backgroundPosition: 'center',
+    overflow: 'hidden',
+  },
+  imgBottom: {
+    objectFit: 'cover',
+    height: '100vh',
+    width: '100vw',
+    [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
+  },
+  imgTop: {
+    objectFit: 'cover',
+    width: '40vw',
+    height: '80vh',
+    position: 'absolute',
+    top: '12vh',
+    right: '20vw',
+    boxShadow: '20px 24px 54px rgba(0, 0, 0, 0.25);',
+    [theme.breakpoints.down('sm')]: {
+      borderRadius: '0 0 10px 10px',
+      height: '50vh',
+      width: '100vw',
+      position: 'static',
+    },
+  },
+}));
+
+const VideoView = (props) => {
+  const classes = useStyles();
+  const [video, setVideo] = useState(null);
+  const { id } = useParams();
+
+  useEffect(() => {
+    const vid = props.videos.find((vid) => vid.id === id);
+    setVideo(vid);
+  }, []);
+
+  return (
+    <Grid container className={classes.container}>
+      {video ? (
+        <>
+          <Grid item sm={12} md={6} className={classes.descriptionContainer}>
+            <Video url={video.url} />
+            <Box>
+              <Typography variant='h1'>{video.title}</Typography>
+              <Typography variant='h3'>Meditation</Typography>
+            </Box>
+            <Box>
+              <Typography variant='h4'>Beskrivning</Typography>
+              <Typography variant='body1'>{video.description}</Typography>
+            </Box>
+
+            <Box className={classes.btnContainer}>
+              <Button
+                variant='contained'
+                color='secondary'
+                type='button'
+                onClick={props.onBack}
+              >
+                Tillbaka
+              </Button>
+            </Box>
+          </Grid>
+          <Grid item sm={12} md={6}>
+            <div className={classes.imageContainer}>
+              <img className={classes.imgBottom} src={video.Image} alt=''></img>
+            </div>
+            <Grid item sm={12} className={classes.imageContainer}>
+              <img
+                className={classes.imgTop}
+                src='https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+                alt=''
+              ></img>
+            </Grid>
+          </Grid>
+        </>
+      ) : null}
+    </Grid>
+  );
+};
+export default VideoView; */
