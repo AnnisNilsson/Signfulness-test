@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'column',
     alignItems: 'center',
   },
+  textpadding:{
+    padding:20
+  },
   textBox: {
     textAlign: 'center',
     marginLeft: 'auto',
@@ -20,6 +23,9 @@ const useStyles = makeStyles((theme) => ({
   },
   imgContainer: {
     display: 'flex',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection:'column'
+    },
   },
   img: {
     objectFit: 'cover',
@@ -45,14 +51,14 @@ const OmOss = () => {
   return (
     <Grid container spacing={10} className={classes.container}>
       <Grid item xs={12} className={[classes.imgContainer, classes.textBox]}>
-        <img src={ak} alt='ak' className={classes.img}></img>
-        <img src={arrow} alt='pil' className={classes.img}></img>
         <img src={rh} alt='rh' className={classes.img}></img>
+        <img src={arrow} alt='pil' className={classes.img}></img>
+        <img src={ak} alt='ak' className={classes.img}></img>
       </Grid>
 
       <Grid item xs={12} className={classes.textBox}>
         <Typography variant='h2'>Vilka är vi?</Typography>
-        <Typography variant='body1'>
+        <Typography variant='body1' className={classes.textpadding}>
           Lorem ipsum dolores sitamet, Lorem ipsum dolores sitametLorem ipsum
           dolores sitametLorem ipsum dolores sitametLorem ipsum dolores
           sitametLorem ipsum dolores sitamet
@@ -62,7 +68,7 @@ const OmOss = () => {
         <Typography variant='h3'>
           Vi vill tacka alla som hjälpt oss på vägen!
         </Typography>
-        <Typography variant='body1'>
+        <Typography variant='body1' className={classes.textpadding}>
           Lorem ipsum dolores sitamet, Lorem ipsum dolores sitametLorem ipsum
           dolores sitametLorem ipsum dolores sitametLorem ipsum dolores
           sitametLorem ipsum dolores sitamet

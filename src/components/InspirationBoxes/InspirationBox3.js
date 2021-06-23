@@ -27,11 +27,11 @@ const InspirationBox3 = (props) => {
   const classes = useStyles(props);
   return (
     <Grid container spacing={0} className={classes.container}>
-      <Grid item xs={6} className={classes.textContainer}>
+      <Grid item md={6} xs={12} className={classes.textContainer}>
         <Typography variant='h5'>{props.heading}</Typography>
         <Typography variant='body1'>{props.text}</Typography>
       </Grid>
-      <Grid item xs={6} className={classes.imgContainer}></Grid>
+      <Grid item md={6} xs={12} className={classes.imgContainer}></Grid>
     </Grid>
   );
 };

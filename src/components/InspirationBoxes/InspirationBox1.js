@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '20px 4px 24px rgba(47, 47, 47, 0.28)',
     flexFlow: 'column nowrap',
     padding: theme.spacing(8),
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing(2),
+    },
   },
   heading: {
     textAlign: 'center',

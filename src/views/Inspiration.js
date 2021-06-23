@@ -16,12 +16,12 @@ const useStyles = makeStyles((theme) => ({
   header: {
     backgroundColor: '#6A9E9E',
     width: '100%',
-    height: '50vh',
+    height: '60vh',
     display: 'flex',
   },
   heading: {
     transform: 'rotate(-90deg)',
-    marginTop: 200,
+    marginTop: 126,
     marginBottom: 200,
     color: '#FFFFFF',
     [theme.breakpoints.down('sm')]: {
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     width: '30vw',
     position: 'relative',
     top: 30,
-    right: 70,
+    right: 62,
     zIndex: 2,
   },
   colorBox: {
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     height: '30vh',
     width: '30vw',
     position: 'absolute',
-    top: 200,
+    top: 177,
     zIndex: 1,
   },
   name: {

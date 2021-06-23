@@ -10,11 +10,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     overflow: 'hidden',
     marginTop: '5vh',
-    maxWidth: '100.9vw',
-    [theme.breakpoints.down('sm')]: {
-      display: 'flex',
-      justifyContent: 'center',
-    },
+    // maxWidth: '100.9vw',
   },
   startImg: {
     backgroundImage:
@@ -77,7 +73,7 @@ const Start = () => {
           description='Många letar och letar i den yttre världen efter lycka. Bättre jobb, roligare partner, snyggare kläder men när vi väl får det är vi ändå inte nöjda men vi förstår inte varför. Kan du känna ångest, oro eller att något inte känns helt rätt men att du inte förstår vad det beror på? Du vill något eller någonstans men du vet inte riktigt vad eller vart? Detta är vanliga känslor och leder ofta till att vi söker lycka i den yttre världen när vi egentligen sitter på alla svaren själva. Meditation och yoga kan vara nyckeln till att börja skifta vårt fokus mot en plats där du kan hitta många nya lärdomar och insikter. Alla svar du behöver finns inom dig du behöver bara lära dig att lyssna till din inre röst. '
         />
       </Grid>
-      <Grid item xs={12}>
+      {/* <Grid item xs={12}> */}
         <InformationBox
           flexDirection='row'
           backgroundColor='#6A9E9E'
@@ -96,7 +92,7 @@ const Start = () => {
           text='Det finns olika anledningar till att utöva yoga. Några vill bli rörligare, vissa vill minska stressa nivåerna och bli mer närvarande och andra vill få bättre kontroll på kroppen. I yogabaserade övningar ingår alltid kropp, andning och sinne. Var man lägger den största vikten beror på yogastilen. Poängen med yoga är att göra det som känns bra för just dig, därför spelar kön, ålder eller fysik ingen roll. Vill du veta mer om yoga eller hur du kan komma igång? Läs mer om yoga här?'
           link='Link'
         />
-      </Grid>
+      {/* </Grid> */}
 
       <Grid item xs={12}>
         <SectionTwo

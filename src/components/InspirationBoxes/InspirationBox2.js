@@ -16,6 +16,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     margin: theme.spacing(5),
     padding: theme.spacing(8),
+    [theme.breakpoints.down('sm')]: {
+      padding: theme.spacing(1),
+      margin: theme.spacing(1),
+    },
   },
   heading: {
     textAlign: 'center',
