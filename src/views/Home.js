@@ -11,6 +11,11 @@ const useStyles = makeStyles((theme) => ({
   container: {
     marginTop: '2vh',
   },
+  headerSection:{
+    [theme.breakpoints.down('sm')]:{
+      display:'none',
+    }
+  },
   categoryheading: {
     textAlign: 'center',
     margin: theme.spacing(8),
@@ -24,12 +29,11 @@ const Home = () => {
     <Grid container spacing={10} className={classes.container}>
       <Rectangle top='98vh' />
       {/* <Triangle top='125vh' bottom={0} /> */}
-      <Grid item xs={12}>
+      <Grid item xs={12} className={classes.headerSection}>
         <Header
           heading='Godmorgon'
           // img="https://images.unsplash.com/photo-1488711500009-f9111944b1ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
           img={start}
-
        />
       </Grid>
       <Grid item xs={12}>
