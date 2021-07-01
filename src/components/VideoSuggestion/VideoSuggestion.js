@@ -6,14 +6,14 @@ const data = [
   {
     image:
       'https://images.unsplash.com/photo-1620590989038-21169e3ad84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-    heading: 'RUBRIK2',
-    description: 'Lorem ipsum dolores.',
+    heading: 'MEDITATION',
+    description: 'hitta ditt inre lugn',
   },
   {
     image:
       'https://images.pexels.com/photos/3326362/pexels-photo-3326362.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-    heading: 'RUBRIK',
-    description: 'Lorem ipsum dolores.',
+    heading: 'YOGA',
+    description: 'hitta din styrka',
   },
 ];
 
@@ -23,22 +23,28 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'row nowrap',
     alignItems: 'center',
     justifyContent: 'space-evenly',
+    [theme.breakpoints.down('sm')]: {
+      flexFlow: 'wrap',
+    },
   },
   video: {
-    height: '50vh',
+    height: '60vh',
   },
   textContainer: {
     textAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
-      display: 'none',
-    },
+    // [theme.breakpoints.down('sm')]: {
+    //   padding: theme.spacing(1),
+    // },
+  },
+  space:{
+    paddingBottom: theme.spacing(4),
   },
   videos: {
     display: 'flex',
     flexFlow: 'column nowrap',
     alignItems: 'center',
     justifyContent: 'center',
-    height: '50vh',
+    height: '62vh',
   },
 }));
 const VideoSuggestion = () => {
@@ -46,15 +52,15 @@ const VideoSuggestion = () => {
   return (
     <Grid container spacing={3} className={classes.videoboxContainer}>
       <Grid item xs={5} className={classes.textContainer}>
-        <Typography variant='h2'>Rubrik</Typography>
-        <Typography variant='body1'>Lorem ipsum dolor sit amet.</Typography>
+        <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
+        <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
       </Grid>
       <Grid item xs={12} md={12} lg={5} className={classes.videoboxContainer}>
         <Grid item xs={5} className={classes.video}>
           <VideoBox
             backgroundImage='https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
-            heading='Rubrik1'
-            description='Lorem ipsum dolor sit amet.'
+            heading='COACH SAMTAL'
+            description='soul manifistation samtal'
           />
         </Grid>
         <Grid item xs={5} className={classes.videos}>

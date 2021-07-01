@@ -6,8 +6,8 @@ const useStyles = makeStyles((theme) => ({
   container: {
     minHeight: 500,
     display: 'flex',
-    flexFlow: (props) => `${props.flexDirection} nowrap`,
     width: '100vw',
+    flexFlow: (props) => `${props.flexDirection} nowrap`,
   },
   box1: {
     backgroundColor: (props) => props.backgroundColor,
@@ -36,14 +36,14 @@ const InformationBox = (props) => {
 
   return (
     <Grid container spacing={0} className={classes.container}>
-      <Grid item md={6} xs={12} className={classes.box1}>
+      <Grid item xs={12} md={6} className={classes.box1}>
         <Grid item xs={10} className={classes.innerBox}>
           <Typography variant='h5'>{props.heading}</Typography>
           <Typography variant='body1'>{props.text}</Typography>
           <Typography variant='subtitle1'>{props.link}</Typography>
         </Grid>
       </Grid>
-      <Grid item md={6} xs={12} className={classes.box2}></Grid>
+      <Grid item xs={12} md={6}  className={classes.box2}></Grid>
     </Grid>
   );
 };

@@ -11,6 +11,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
     margintop: '5vh',
     height: '100vh',
+    [theme.breakpoints.down('sm')]: {
+      display:'block',
+      // width: '100vw',
+    },
   },
   textContainer: {
     height: '50%',
@@ -23,9 +27,10 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#238584',
   },
   video: {
-    position: 'absolute',
-    top: 400,
-    right: 800,
+    display:'flex',
+    justifyContent:'center',
+    paddingTop:'20%',
+
   },
 }));
 
@@ -43,13 +48,13 @@ const VideoView = (props) => {
     <Grid container className={classes.container}>
       {video ? (
         <>
-          <Grid item xs={6} className={classes.textContainer}>
+          <Grid item md={12} xs={6}  className={classes.textContainer}>
             <Grid item xs={11} className={classes.textBox}>
-              <Typography variant='h1'>{video.title}</Typography>
+              <Typography variant='h2'>{video.title}</Typography>
               <Typography variant='h3'>Meditation</Typography>
             </Grid>
             <Grid item xs={8} className={classes.textBox}>
-              <Typography variant='h4'>Beskrivning</Typography>
+              <Typography variant='h3'>Beskrivning</Typography>
               <Typography variant='body1'>{video.description}</Typography>
             </Grid>
             <Grid item xs={4} className={classes.btnBox}>
@@ -58,7 +63,7 @@ const VideoView = (props) => {
               </Button>
             </Grid>
           </Grid>
-          <Grid item xs={6} className={classes.videoContainer}>
+          <Grid item xs={6} md={12} className={classes.videoContainer}>
             <Grid item xs={12} className={classes.video}>
               <Video url={video.url} />
             </Grid>

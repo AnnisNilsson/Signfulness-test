@@ -5,6 +5,7 @@ import VideoSuggestion from '../components/VideoSuggestion/VideoSuggestion';
 import Rectangle from '../components/Rectangle';
 import CategoryBoxes from '../components/CategoryBoxes/CategoryBoxes';
 import Triangle from '../components/Triangle';
+import start from '../media/start.png'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -21,23 +22,25 @@ const Home = () => {
 
   return (
     <Grid container spacing={10} className={classes.container}>
-      <Rectangle top='75vh' />
-      <Triangle top='125vh' bottom={0} />
+      <Rectangle top='98vh' />
+      {/* <Triangle top='125vh' bottom={0} /> */}
       <Grid item xs={12}>
         <Header
           heading='Godmorgon'
-          img="https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')"
-        />
+          // img="https://images.unsplash.com/photo-1488711500009-f9111944b1ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
+          img={start}
+
+       />
       </Grid>
       <Grid item xs={12}>
         <VideoSuggestion />
       </Grid>
-      <Grid item xs={12}>
+      {/* <Grid item xs={12}>
         <Typography variant='h2' className={classes.categoryheading}>
           Kategorier
         </Typography>
         <CategoryBoxes />
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };

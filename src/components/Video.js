@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Video = (props) => {
   return (
-    <Grid container>
+    <Grid container xs={10} >
       <ReactPlayer url={props.url} controls={true} />
     </Grid>
   );

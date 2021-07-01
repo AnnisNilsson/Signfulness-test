@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexFlow: 'column',
     alignItems: 'center',
+    marginTop: theme.spacing(2),
   },
   heading: {
     textAlign: 'center',
@@ -26,14 +27,14 @@ const Meditation = (props) => {
 
   return (
     <Grid container spacing={10} className={classes.container}>
-      <Rectangle top={'50vh'} />
-      <Triangle top={'100vh'} />
+      <Rectangle top={'100vh'} />
+      <Triangle top={'200vh'} />
       <Grid item xs={12}>
         <Typography variant='h1' className={classes.heading}>
-          Meditation
+          MEDITATIONER
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item  xs={12}>
         <CategoryDescription
           color='rgb(114 156 155)'
           backgroundImage={`url(${handwithplant})`}
