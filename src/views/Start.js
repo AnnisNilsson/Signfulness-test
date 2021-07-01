@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
   container: {
     overflow: 'hidden',
     marginTop: '5vh',
-    // maxWidth: '100.9vw',
   },
   startImg: {
     backgroundImage:

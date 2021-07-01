@@ -3,8 +3,8 @@ import { Grid, Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: '#689E9E',
-    height: '40vh',
+    // backgroundColor: '#689E9E',
+    // height: '40vh',
     position: 'relative',
     zIndex: 0,
     marginBottom: theme.spacing(12),
@@ -14,36 +14,47 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    [theme.breakpoints.down('sm')]: {
+      justifyContent:'center'
+     
+    },
   },
   textBox: {
     height: '50%',
-    color: '#FFFFFF',
+    // color: '#FFFFFF',
     flexFlow: 'column',
     textAlign: 'center',
     alignSelf: 'center',
     justifyContent: 'space-evenly',
-  },
-  whiteBox: {
-    position: 'absolute',
-    backgroundColor: '#FFFFFF',
-    top: 60,
-    left: 50,
-    height: '85%',
-    width: '45%',
-    zIndex: 1,
     [theme.breakpoints.down('sm')]: {
-      display: 'none',
+      marginLeft:'30%'
     },
+ 
   },
+  // whiteBox: {
+  //   position: 'absolute',
+  //   backgroundColor: '#FFFFFF',
+  //   top: 60,
+  //   left: 50,
+  //   height: '85%',
+  //   width: '45%',
+  //   zIndex: 1,
+  //   [theme.breakpoints.down('sm')]: {
+  //     display: 'none',
+  //   },
+  // },
   imageBox: {
     objectFit: 'cover',
     backgroundPosition: 'center',
-    height: '35vh',
-    width: '35vw',
+    height: '50vh',
+    // width: '50vw',
     zIndex: 2,
     position: 'relative',
     top: 80,
     left: -70,
+       [theme.breakpoints.down('sm')]: {
+      display: 'none',
+    },
   },
 }));
 const Header = (props) => {
@@ -58,7 +69,7 @@ const Header = (props) => {
             alt='Woman meditating'
           />
         </Grid>
-        <Grid item xs={8} className={classes.whiteBox} />
+        {/* <Grid item xs={8} className={classes.whiteBox} /> */}
       </Grid>
       <Grid item xs={4} className={[classes.box, classes.textBox]}>
         <div>

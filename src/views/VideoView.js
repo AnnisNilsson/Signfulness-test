@@ -9,24 +9,49 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    margintop: '5vh',
+    margintop: '50vh',
+    paddingTop:'5vh',
     height: '100vh',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection:'column-reverse'
+    },
   },
   textContainer: {
     height: '50%',
     display: 'flex',
     flexFlow: 'column',
-    paddingLeft: theme.spacing(8),
+    paddingLeft: theme.spacing(5),
+   
+
+  },
+  textBoxOne:{
+    [theme.breakpoints.down('sm')]:{
+      paddingTop:theme.spacing(6),
+      }
+    },
+    textBoxTwo:{
+    paddingTop:theme.spacing(6),
+  
   },
   videoContainer: {
     height: '100%',
     backgroundColor: '#238584',
+    [theme.breakpoints.down('sm')]: {
+      width:'100vw',
+    }
   },
   video: {
-    position: 'absolute',
-    top: 400,
-    right: 800,
+    display:'flex',
+    justifyContent:'center',
+    paddingTop:'20%',
+    [theme.breakpoints.down('sm')]: {
+      paddingBottom:theme.spacing(4),
+    }
   },
+  btnBox:{
+    paddingTop:theme.spacing(3),
+
+  }
 }));
 
 const VideoView = (props) => {
@@ -43,13 +68,13 @@ const VideoView = (props) => {
     <Grid container className={classes.container}>
       {video ? (
         <>
-          <Grid item xs={6} className={classes.textContainer}>
-            <Grid item xs={11} className={classes.textBox}>
-              <Typography variant='h1'>{video.title}</Typography>
+          <Grid className={classes.textContainer}>
+            <Grid item xs={11} className={classes.textBoxOne}>
               <Typography variant='h3'>Meditation</Typography>
+              <Typography variant='h2'>{video.title}</Typography>
             </Grid>
-            <Grid item xs={8} className={classes.textBox}>
-              <Typography variant='h4'>Beskrivning</Typography>
+            <Grid item xs={8} className={classes.textBoxTwo}>
+              <Typography variant='h3'>Beskrivning</Typography>
               <Typography variant='body1'>{video.description}</Typography>
             </Grid>
             <Grid item xs={4} className={classes.btnBox}>
@@ -58,7 +83,7 @@ const VideoView = (props) => {
               </Button>
             </Grid>
           </Grid>
-          <Grid item xs={6} className={classes.videoContainer}>
+          <Grid item className={classes.videoContainer}>
             <Grid item xs={12} className={classes.video}>
               <Video url={video.url} />
             </Grid>

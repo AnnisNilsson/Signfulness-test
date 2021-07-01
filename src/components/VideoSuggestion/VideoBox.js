@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     boxSizing: 'content-box',
     margin: 'auto auto -10px auto',
     boxShadow: '10px 14px 24px rgba(0, 0, 0, 0.25)',
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
   },
 }));
 

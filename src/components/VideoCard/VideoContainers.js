@@ -17,7 +17,7 @@ const VideoContainers = (props) => {
   return (
     <Grid container spacing={3} className={classes.container}>
       {props.videos.map((video) => (
-        <Grid item xs={8} md={3} key={video.id}>
+        <Grid item xs={8} md={4} key={video.id}>
           <VideoContainer
             img={video.image}
             heading={video.title}

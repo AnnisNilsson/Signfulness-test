@@ -8,23 +8,22 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
   colorBlock: {
-    height: '20vh',
+    height: '100%',
     backgroundColor: (props) => props.color,
     display: 'flex',
     flexFlow: 'row nowrap',
     alignItems: 'center',
     justifyContent: 'space-evenly',
     borderRadius: 15,
+    padding: theme.spacing(2),
+
   },
   iconBlock: {
-    height: '100%',
+    height: '20vh',
     backgroundImage: (props) => props.backgroundImage,
     backgroundSize: 'contain',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
-  },
-  heading: {
-    marginLeft: -20,
   },
   text: {
     paddingLeft: 20,
@@ -36,7 +35,7 @@ const CategoryDescription = (props) => {
 
   return (
     <Grid container className={classes.container}>
-      <Grid item xs={10} md={6} className={classes.colorBlock}>
+      <Grid item xs={10} md={8} className={classes.colorBlock}>
         <Grid item xs={6}>
           <Typography
             variant='h5'
