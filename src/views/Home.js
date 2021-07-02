@@ -9,7 +9,7 @@ import start from '../media/start.png'
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    marginTop: '2vh',
+    marginTop: '10vh',
   },
   headerSection:{
     [theme.breakpoints.down('sm')]:{
@@ -26,8 +26,8 @@ const Home = () => {
   const classes = useStyles();
 
   return (
-    <Grid container spacing={10} className={classes.container}>
-      <Rectangle top='98vh' />
+    <Grid container spacing={1} className={classes.container}>
+      <Rectangle top='88vh' />
       {/* <Triangle top='125vh' bottom={0} /> */}
       <Grid item xs={12} className={classes.headerSection}>
         <Header

@@ -32,9 +32,7 @@ const useStyles = makeStyles((theme) => ({
   },
   textContainer: {
     textAlign: 'center',
-    // [theme.breakpoints.down('sm')]: {
-    //   padding: theme.spacing(1),
-    // },
+    marginLeft:theme.spacing(8),
   },
   space:{
     paddingBottom: theme.spacing(4),
@@ -51,7 +49,7 @@ const VideoSuggestion = () => {
   const classes = useStyles();
   return (
     <Grid container spacing={3} className={classes.videoboxContainer}>
-      <Grid item xs={5} className={classes.textContainer}>
+      <Grid item className={classes.textContainer}>
         <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
         <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
       </Grid>

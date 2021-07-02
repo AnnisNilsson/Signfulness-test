@@ -3,13 +3,17 @@ import { Grid, makeStyles } from '@material-ui/core';
 import InformationBox from '../components/InformationBox';
 import SectionSecond from '../components/YogaMeditationSectionSecond/SectionSecond';
 import yoga1 from '../media/yoga1.png';
-import SectionTwo from '../components/YogaMeditationSectionFirst/SectionTwo';
 import { Typography } from '@material-ui/core';
+import SectionFirst from '../components/YogaMeditationSectionSecond/SectionFirst';
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
     overflow: 'hidden',
     marginTop: '5vh',
+  },
+  space:{
+    padding:'25px 0 25px 0'
   },
   startImg: {
     backgroundImage:
@@ -24,26 +28,29 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  heading: {
-    display: 'flex',
-    backgroundColor: '#689E9E',
-    textAlign: 'end',
-    [theme.breakpoints.down('sm')]: {
-      textAlign: 'center',
-      width: '100vw',
-      paddingTop: '5vh',
-      paddingBottom: '5vh',
-    },
+  heading:{
+    fontSize:'40pt'
   },
-  headingText: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    color: '#FFFFFF',
-    marginTop: 'auto',
-    marginBottom: 'auto',
-    textAlign: 'center',
-  },
+  // heading: {
+  //   display: 'flex',
+  //   backgroundColor: '#689E9E',
+  //   textAlign: 'end',
+  //   [theme.breakpoints.down('sm')]: {
+  //     textAlign: 'center',
+  //     width: '100vw',
+  //     paddingTop: '5vh',
+  //     paddingBottom: '5vh',
+  //   },
+  // },
+  // headingText: {
+  //   display: 'flex',
+  //   flexDirection: 'column',
+  //   justifyContent: 'center',
+  //   color: '#FFFFFF',
+  //   marginTop: 'auto',
+  //   marginBottom: 'auto',
+  //   textAlign: 'center',
+  // },
   img: {
     objectFit: 'cover',
     width: '50vw',
@@ -54,18 +61,25 @@ const useStyles = makeStyles((theme) => ({
       display: 'none',
     },
   },
+  lastSection:{
+    padding:'25px 0 25px 0',
+    [theme.breakpoints.down('sm')]: {
+      marginTop: '20vh',
+    },
+
+  }
 }));
 
 const Start = () => {
   const classes = useStyles();
   return (
-    <Grid container spacing={10} className={classes.container}>
+    <Grid container spacing={0} className={classes.container}>
       <Grid item xs={12} className={classes.startImg}>
-        <Typography variant='h4'>Signfulness</Typography>
+        <Typography variant='h4' className={classes.heading}>Signfulness</Typography>
         <Typography variant='h1'>Sign for your mind</Typography>
       </Grid>
-      <Grid item xs={12}>
-        <SectionSecond
+      <Grid item xs={12} className={classes.space}>
+        <SectionFirst
           img={yoga1}
           alt='meditation'
           title='Hitta din inre röst'
@@ -93,9 +107,11 @@ const Start = () => {
         />
       {/* </Grid> */}
 
-      <Grid item xs={12}>
-        <SectionTwo
+  
+      <Grid item xs={12} className={classes.lastSection}>
+      <SectionSecond
           img='https://images.unsplash.com/photo-1524901548305-08eeddc35080?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2550&q=80'
+          alt='signfulness'
           title='Signfulness'
           description='Vi tycker att det är viktigt att leva ett liv i närvaro och mindfulness kan vara ett bra verktyg till just det. Vårt namn Signfulness är därför inspirerat av ordet mindfulness. Allt vi gör är på teckenspråk (signs) och vi tycker därför att ordet signfulness är en bra representation för vad vi gör och står för. Vi tror också att om du lever ett liv i närvaro kommer livet att visa dig vägen. Om du litar på livet och är öppen och närvarande kommer du lättare se tecken (signs) vart du ska. '
         />
