@@ -5,6 +5,7 @@ import Triangle from '../components/Triangle';
 import CategoryDescription from '../components/CategoryDescription';
 import handwithplant from '../media/handwithplant.svg';
 import VideoContainers from '../components/VideoCard/VideoContainers';
+import isUserLoggedIn from '../services/authMethods';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -24,6 +25,8 @@ const useStyles = makeStyles((theme) => ({
 
 const Meditation = (props) => {
   const classes = useStyles();
+
+  if (!isUserLoggedIn()) return (null);
 
   return (
     <Grid container spacing={10} className={classes.container}>

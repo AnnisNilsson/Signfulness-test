@@ -1,6 +1,19 @@
 import firebaseConfig from './firebase';
 import firebase from 'firebase';
 
+let isLoggedIn = false;
+
+firebase
+  .auth()
+  .onAuthStateChanged((user) => {
+    isLoggedIn = (user != null);
+    console.log("isLoggedIn: " + isLoggedIn);
+  });
+
+  export default function isUserLoggedIn() {
+    return isLoggedIn;
+  }
+
 export const authMethods = {
   signup: (email, password, setErrors, setToken) => {
     firebase
