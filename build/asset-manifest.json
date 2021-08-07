@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/static/js/main.8f553f4c.chunk.js",
+    "main.js.map": "/static/js/main.8f553f4c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c2f6b13c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c2f6b13c.js.map",
+    "static/js/2.f7232ff4.chunk.js": "/static/js/2.f7232ff4.chunk.js",
+    "static/js/2.f7232ff4.chunk.js.map": "/static/js/2.f7232ff4.chunk.js.map",
+    "static/js/3.b2a1075d.chunk.js": "/static/js/3.b2a1075d.chunk.js",
+    "static/js/3.b2a1075d.chunk.js.map": "/static/js/3.b2a1075d.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.f7232ff4.chunk.js.LICENSE.txt": "/static/js/2.f7232ff4.chunk.js.LICENSE.txt",
+    "static/media/annis.bb6cb8f2.png": "/static/media/annis.bb6cb8f2.png",
+    "static/media/annis2.551f04fc.png": "/static/media/annis2.551f04fc.png",
+    "static/media/handwithplant.54b5e9a3.svg": "/static/media/handwithplant.54b5e9a3.svg",
+    "static/media/meditation2.c89c438d.png": "/static/media/meditation2.c89c438d.png",
+    "static/media/meditationtext.349029fd.png": "/static/media/meditationtext.349029fd.png",
+    "static/media/rahima.ab709068.png": "/static/media/rahima.ab709068.png",
+    "static/media/rahima2.28b82e99.png": "/static/media/rahima2.28b82e99.png",
+    "static/media/start.c4243645.png": "/static/media/start.c4243645.png",
+    "static/media/yoga.97e99deb.png": "/static/media/yoga.97e99deb.png",
+    "static/media/yoga1.8e2df7a1.png": "/static/media/yoga1.8e2df7a1.png",
+    "static/media/yoga2.ef1b588a.png": "/static/media/yoga2.ef1b588a.png",
+    "static/media/yogatext.7d58b6d8.png": "/static/media/yogatext.7d58b6d8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c2f6b13c.js",
+    "static/js/2.f7232ff4.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.8f553f4c.chunk.js"
+  ]
+}
