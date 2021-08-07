@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
     height: '35vh',
     margin: '3vh',
+    [theme.breakpoints.down('sm')]: {
+      height: '20vh',
+    }
   },
   heading: {
     backgroundColor: '#D9BAAF',
@@ -25,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: '0px 1px 3px rgba(0, 0, 0, 0.25)',
   },
   text: {
-    marginTop: theme.spacing(7),
+    marginTop: theme.spacing(5),
     textAlign: 'center',
   },
   box: {

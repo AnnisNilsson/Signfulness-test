@@ -8,6 +8,10 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     width: '100vw',
     flexFlow: (props) => `${props.flexDirection} nowrap`,
+    [theme.breakpoints.down('sm')]: {
+      display:'grid',
+      height:'80vh'
+    },
   },
   box1: {
     backgroundColor: (props) => props.backgroundColor,
@@ -17,18 +21,27 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'space-evenly',
     minHeight: '100%',
+    [theme.breakpoints.down('sm')]: {
+      height:'fit-content',
+    },
   },
   innerBox: {
     textAlign: 'center',
-    maxHeight: '60%',
+    height: '100%',
     display: 'flex',
     flexFlow: 'column',
     justifyContent: 'space-between',
+    [theme.breakpoints.down('sm')]: {
+      padding:20
+    },
   },
   box2: {
     backgroundImage: (props) => `url(${props.backgroundImage})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    [theme.breakpoints.down('sm')]: {
+      height:'40vh',
+    },
   },
 }));
 const InformationBox = (props) => {
@@ -36,14 +49,14 @@ const InformationBox = (props) => {
 
   return (
     <Grid container spacing={0} className={classes.container}>
-      <Grid item xs={12} md={6} className={classes.box1}>
+      <Grid item xs={12} md={12} className={classes.box1}>
         <Grid item xs={10} className={classes.innerBox}>
           <Typography variant='h5'>{props.heading}</Typography>
           <Typography variant='body1'>{props.text}</Typography>
           <Typography variant='subtitle1'>{props.link}</Typography>
         </Grid>
       </Grid>
-      <Grid item xs={12} md={6}  className={classes.box2}></Grid>
+      <Grid item xs={12} md={12}  className={classes.box2}></Grid>
     </Grid>
   );
 };

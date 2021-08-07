@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 const Yoga_Meditation = () => {
   const classes = useStyles();
   return (
-    <Grid container spacing={10} className={classes.container}>
+    <Grid container spacing={0} className={classes.container}>
       <Grid item xs={12}>
         <YogaMeditationHeader />
       </Grid>

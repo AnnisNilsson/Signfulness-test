@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
     height: '35vh',
     padding: '3vh',
+    [theme.breakpoints.down('sm')]: {
+      height: '20vh',
+    }
   },
   textBox: {
     textAlign: 'center',
@@ -21,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   text: {
-    marginTop: theme.spacing(7),
+    marginTop: theme.spacing(4),
     textAlign: 'center',
   },
   heading: {
@@ -49,7 +52,7 @@ const SectionFirst = (props) => {
           {props.description}
         </Typography>
       </Grid>
-      <Grid item xs={8} md={4}>
+      <Grid item xs={12} md={6}>
         <Box className={classes.box}>
           <img src={props.img} alt='yoga' className={classes.img}></img>
         </Box>
