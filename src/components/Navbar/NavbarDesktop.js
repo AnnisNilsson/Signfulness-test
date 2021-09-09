@@ -3,6 +3,7 @@ import { Grid, Typography, makeStyles, Button } from '@material-ui/core';
 import { Link, withRouter } from 'react-router-dom';
 import SpaIcon from '@material-ui/icons/Spa';
 import PropTypes from 'prop-types';
+import logga from '../../media/logga.png';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -17,6 +18,12 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 1100,
     boxShadow: '4px 11px 19px -1px rgba(178,178,178,0.58)',
     webkiBoxShadow:' 4px 11px 19px -1px rgba(178,178,178,0.58)', 
+  },
+  navIconBox:{
+    paddingLeft:'4vw'
+  },
+  logga:{
+    height:'10vh'
   },
   icon: {
     color: '#238584',
@@ -50,9 +57,10 @@ const NavbarDesktop = (props) => {
 
   return (
     <Grid container className={classes.container}>
-      <Grid item md={2}>
+      <Grid item md={2} className={classes.navIconBox}>
         <Link to='/'>
-          <SpaIcon className={classes.icon} />
+          <img src={logga} alt='signfulness' className={classes.logga}></img>
+          {/* <SpaIcon className={classes.icon} /> */}
         </Link>
       </Grid>
       <Grid item md={8} className={classes.linkContainer}>

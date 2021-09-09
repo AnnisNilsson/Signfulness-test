@@ -15,6 +15,8 @@ import MenuIcon from '@material-ui/icons/Menu';
 import CloseIcon from '@material-ui/icons/Close';
 import SpaIcon from '@material-ui/icons/Spa';
 import PropTypes from 'prop-types';
+import logga from '../../media/logga.png';
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -33,6 +35,9 @@ const useStyles = makeStyles((theme) => ({
   paddingLeft:'6vw',
   paddingRight:'6vw'
 
+  },
+  logga:{
+    height:'9vh'
   },
   btn: {
     marginBottom: theme.spacing(2),
@@ -64,7 +69,8 @@ const NavbarMobile = (props) => {
           alignItems='center'
         >
           <Link to='/'>
-            <SpaIcon color='primary' />
+          <img src={logga} alt='signfulness' className={classes.logga}></img>
+            {/* <SpaIcon color='primary' /> */}
           </Link>
           <MenuIcon color='primary' onClick={() => setDrawer(true)} />
         </Grid>
