@@ -30,7 +30,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'center',
   },
  Gridcontainer:{
-  padding:'4vw'
+  paddingLeft:'6vw',
+  paddingRight:'6vw'
+
   },
   btn: {
     marginBottom: theme.spacing(2),
