@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import Readmore from '../Readmore';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -30,6 +31,9 @@ const InspirationBox3 = (props) => {
       <Grid item md={6} xs={12} className={classes.textContainer}>
         <Typography variant='h5'>{props.heading}</Typography>
         <Typography variant='body1'>{props.text}</Typography>
+        <Readmore 
+      readMore={props.readMore}
+      />
       </Grid>
       <Grid item md={6} xs={12} className={classes.imgContainer}></Grid>
     </Grid>
