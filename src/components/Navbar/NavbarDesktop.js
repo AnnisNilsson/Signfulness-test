@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 const useStyles = makeStyles((theme) => ({
   container: {
     backgroundColor: '#F6F6F6',
-    height: '5vh',
+    height: '9vh',
     display: 'flex',
     flexFlow: 'row nowrap',
     alignItems: 'center',
@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) => ({
     position: 'fixed',
     top: 0,
     zIndex: 1100,
-    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+    boxShadow: '4px 11px 19px -1px rgba(178,178,178,0.58)',
+    webkiBoxShadow:' 4px 11px 19px -1px rgba(178,178,178,0.58)', 
   },
   icon: {
     color: '#238584',

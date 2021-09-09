@@ -19,14 +19,18 @@ import PropTypes from 'prop-types';
 const useStyles = makeStyles((theme) => ({
   container: {
     backgroundColor: '#F6F6F6',
-    height: '5vh',
+    height: '8vh',
     position: 'fixed',
     top: 0,
     zIndex: 1100,
-    boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+    boxShadow: '4px 11px 19px -1px rgba(178,178,178,0.58)',
+    webkiBoxShadow:' 4px 11px 19px -1px rgba(178,178,178,0.58)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+ Gridcontainer:{
+  padding:'4vw'
   },
   btn: {
     marginBottom: theme.spacing(2),
@@ -51,6 +55,7 @@ const NavbarMobile = (props) => {
     <>
       <AppBar className={classes.container}>
         <Grid
+        className={classes.Gridcontainer}
           container
           direction='row'
           justify='space-between'
