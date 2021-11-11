@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { ThemeProvider } from '@material-ui/core';
+import { ThemeProvider, Grid } from '@material-ui/core';
 import { firebaseAuth } from './providers/AuthProvider';
 import theme from './theme/theme';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
@@ -15,6 +15,7 @@ import OmOss from './views/OmOss';
 import Start from './views/Start';
 import VideoView from './views/VideoView';
 import fetchVideos from './actions';
+import Footer from './components/Footer/Footer';
 
 function App(props) {
   const [videos, setVideos] = useState([]);
@@ -26,9 +27,11 @@ function App(props) {
   }, []);
 
   return (
+    <Grid>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <Navbar onSignout={handleSignout} />
+
         <Switch>
           <Route
             path='/'
@@ -53,6 +56,8 @@ function App(props) {
         </Switch>
       </ThemeProvider>
     </BrowserRouter>
+    <Footer></Footer>
+    </Grid>
   );
 }
 const mapStateToProps = (state) => {

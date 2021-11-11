@@ -70,7 +70,6 @@ const NavbarMobile = (props) => {
         >
           <Link to='/'>
           <img src={logga} alt='signfulness' className={classes.logga}></img>
-            {/* <SpaIcon color='primary' /> */}
           </Link>
           <MenuIcon color='primary' onClick={() => setDrawer(true)} />
         </Grid>

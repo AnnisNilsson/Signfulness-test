@@ -4,6 +4,7 @@ import InspirationBox1 from '../components/InspirationBoxes/InspirationBox1';
 import InspirationBox2 from '../components/InspirationBoxes/InspirationBox2';
 import InspirationBox3 from '../components/InspirationBoxes/InspirationBox3';
 import InspirationBox4 from '../components/InspirationBoxes/InspirationBox4';
+import ocean from '../media/ocean.jpg'
 import PropTypes from 'prop-types';
 
 const useStyles = makeStyles((theme) => ({
@@ -13,20 +14,24 @@ const useStyles = makeStyles((theme) => ({
     flexFlow: 'column',
     alignItems: 'center',
   },
-  header: {
-    backgroundColor: '#6A9E9E',
-    width: '100%',
-    height: '60vh',
-    display: 'flex',
-  },
   heading: {
     transform: 'rotate(-90deg)',
-    marginTop: 126,
-    marginBottom: 200,
+    marginTop: '-153px',
+    marginLeft: '-84vw',
     color: '#FFFFFF',
     [theme.breakpoints.down('sm')]: {
       fontSize: '20pt',
     },
+  },
+  boxContainer:{
+    marginTop:'10vh'
+  },
+  imgContainer:{
+    width:'100%',
+  },
+  imagebox:{
+    width:'100%',
+    height:'50%'
   },
   headerImg: {
     objectFit: 'cover',
@@ -61,7 +66,10 @@ const Inspiration = (props) => {
   const classes = useStyles();
   return (
     <Grid container spacing={10} className={classes.container}>
-      <Grid item className={classes.header}>
+      {/* <Grid item className={classes.header}> */}
+        <Grid className={classes.imgContainer}>
+        <img src={ocean} className={classes.imagebox} alt="ocean"></img>
+        </Grid>
         <Typography
           className={classes.heading}
           variant='h1'
@@ -69,18 +77,7 @@ const Inspiration = (props) => {
         >
           INSPIRATION
         </Typography>
-        <Grid item>
-          <img
-            className={classes.headerImg}
-            src='https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
-            alt='havet'
-          ></img>
-          <Box className={classes.colorBox}></Box>
-          <Typography className={classes.name} variant='h2' color='textPrimary'>
-            Signfulness
-          </Typography>
-        </Grid>
-      </Grid>
+
       <Grid item xs={10} className={classes.boxContainer}>
         <InspirationBox1
           borderColor='#E0CAC2'
