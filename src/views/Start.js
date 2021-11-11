@@ -5,6 +5,7 @@ import SectionSecond from '../components/YogaMeditationSectionSecond/SectionSeco
 import yoga1 from '../media/yoga1.png';
 import { Typography } from '@material-ui/core';
 import SectionFirst from '../components/YogaMeditationSectionSecond/SectionFirst';
+import Footer from '../components/Footer/Footer';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -116,6 +117,7 @@ const Start = () => {
           description='Vi tycker att det är viktigt att leva ett liv i närvaro och mindfulness kan vara ett bra verktyg till just det. Vårt namn Signfulness är därför inspirerat av ordet mindfulness. Allt vi gör är på teckenspråk (signs) och vi tycker därför att ordet signfulness är en bra representation för vad vi gör och står för. Vi tror också att om du lever ett liv i närvaro kommer livet att visa dig vägen. Om du litar på livet och är öppen och närvarande kommer du lättare se tecken (signs) vart du ska. '
         />
       </Grid>
+      <Footer/>
     </Grid>
   );
 };

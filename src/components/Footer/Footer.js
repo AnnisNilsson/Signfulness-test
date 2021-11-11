@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
     boxOne:{
         display:'flex',
         fontSize:'15pt',
-        padding:'20px',
+        padding:'10px',
+        paddingLeft:'50px'
 
        
     },
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         background: '#919191',
         width:'100%',
-        padding:'15px'
+        padding:'15px',
     }
 }));
 

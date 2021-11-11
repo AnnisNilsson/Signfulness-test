@@ -5,6 +5,7 @@ import ThankYouBoxRight from '../components/ThankyouBoxRight';
 import ak from '../media/annis.png';
 import arrow from '../media/arrow.png';
 import rh from '../media/rahima.png';
+import Footer from '../components/Footer/Footer';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -89,6 +90,7 @@ const OmOss = () => {
           'https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'
         }
       />
+      <Footer/>
     </Grid>
   );
 };

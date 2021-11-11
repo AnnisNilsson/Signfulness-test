@@ -15,7 +15,6 @@ import OmOss from './views/OmOss';
 import Start from './views/Start';
 import VideoView from './views/VideoView';
 import fetchVideos from './actions';
-import Footer from './components/Footer/Footer';
 
 function App(props) {
   const [videos, setVideos] = useState([]);
@@ -56,7 +55,7 @@ function App(props) {
         </Switch>
       </ThemeProvider>
     </BrowserRouter>
-    <Footer></Footer>
+ 
     </Grid>
   );
 }

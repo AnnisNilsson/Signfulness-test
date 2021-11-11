@@ -18,11 +18,11 @@ const theme = createMuiTheme({
   typography: {
     fontFamily: ['Comfortaa'],
     h1: {
-      fontSize: '1.4rem',
+      fontSize: '2rem',
       fontWeight: 700,
     },
     h2: {
-      fontSize: '1.2rem',
+      fontSize: '1.7rem',
       fontWeight: 500,
     },
     h3: {

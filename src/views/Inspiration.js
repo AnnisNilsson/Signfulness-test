@@ -6,6 +6,7 @@ import InspirationBox3 from '../components/InspirationBoxes/InspirationBox3';
 import InspirationBox4 from '../components/InspirationBoxes/InspirationBox4';
 import ocean from '../media/ocean.jpg'
 import PropTypes from 'prop-types';
+import Footer from '../components/Footer/Footer';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -121,6 +122,7 @@ const Inspiration = (props) => {
           readMore='De ovannämnda egenskaper men de har ett känsligare nervsystem och en hjärna som fungerar annorlunda. De noterar detaljer som de reflekterar över och bearbetar på ett djupare plan. Detta leder till en mängd ovärderliga egenskaper men också att högkänsliga personer lätt blir överstimulerade och/eller överväldigade. Detta kan leda till att man helst vill dra sig undan och vara ifred för att få tid för sig själv. En högkänslig person kan lättare bli trött och utmattad när det händer för mycket nytt på en och samma gång. HSP lägger ofta snabbt märke till faror eller känner av när någon i gruppen inte mår bra. Enligt vetenskapen är det bevisat att hjärnan hos en HSP har en större förmåga att ta in intryck djupare och bearbeta information mer än andra. Det är en egenskap du föds med. Vanligast missförstånd hos andra är att folk tror det är en bokstavskombination eller diagnos men så är inte fallet. Det är ett personlighetsdrag, och nästan var femte människa är högkänslig.'
       />
       </Grid>
+      <Footer/>
     </Grid>
   );
 };

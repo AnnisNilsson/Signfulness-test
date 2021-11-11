@@ -6,6 +6,7 @@ import Rectangle from '../components/Rectangle';
 import CategoryBoxes from '../components/CategoryBoxes/CategoryBoxes';
 import Triangle from '../components/Triangle';
 import start from '../media/start.png'
+import Footer from '../components/Footer/Footer';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -45,6 +46,7 @@ const Home = () => {
         </Typography>
         <CategoryBoxes />
       </Grid> */}
+      <Footer />
     </Grid>
   );
 };

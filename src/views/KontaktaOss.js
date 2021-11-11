@@ -3,6 +3,7 @@ import { Grid, Typography, makeStyles, Box } from '@material-ui/core';
 import ContactCard from '../components/ContactCard';
 import rahima from '../media/rahima2.png';
 import annis from '../media/annis2.png';
+import Footer from '../components/Footer/Footer';
 
 const useStyles = makeStyles((theme) => ({
   box: {
@@ -36,6 +37,7 @@ const KontaktaOss = (props) => {
           description='beskrivning'
         />
       </Grid>
+      <Footer/>
     </Grid>
   );
 };

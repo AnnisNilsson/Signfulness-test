@@ -7,6 +7,7 @@ import SectionFirst from '../components/YogaMeditationSectionSecond/SectionFirst
 import SectionSecond from '../components/YogaMeditationSectionSecond/SectionSecond';
 import meditation2 from '../media/meditation2.png';
 import yoga2 from '../media/yoga2.png';
+import Footer from '../components/Footer/Footer';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -58,6 +59,7 @@ const Yoga_Meditation = () => {
           description='Det kan kännas tufft att komma igång med yoga men kom ihåg att det är de små stunderna som räknas. Du behöver inte köra ett 60 minuters pass direkt eller göra avancerade övningar om du inte vill. Börja enkelt, gå in i en yogaposition som känns bra för dig och lyssna på kroppen och känn hur den känns här och nu. Det räcker med att göra det en kort stund och kom ihåg att andas. Om det är svårt att hitta motivation för att komma igång tänk på det positiva effekterna som yogan har för både kropp och själ. Det finns de som tycker om att gå på pass, andra vill se yogalektioner online. Hitta din egen yogastil, det är lätt att tro att man måste göra på ett speciellt sätt men hitta vad som passar dig och följ din inre guide och lyssna till din kropp!'
         />
       </Grid>
+      <Footer/>
     </Grid>
   );
 };
