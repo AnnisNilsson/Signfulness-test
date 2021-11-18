@@ -24,15 +24,29 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'space-evenly',
     [theme.breakpoints.down('sm')]: {
-      flexFlow: 'wrap',
+      flexFlow: 'wrap-reverse',
     },
   },
+
   video: {
     height: '60vh',
+    [theme.breakpoints.down('sm')]: {
+      marginBottom:'10vh'
+    },
   },
   textContainer: {
     textAlign: 'center',
     marginLeft:theme.spacing(8),
+    [theme.breakpoints.down('sm')]: {
+      display:'none'
+    },
+  },
+    textContainerSm:{
+      [theme.breakpoints.up('md')]: {
+        display:'none',
+     
+      
+    }
   },
   space:{
     paddingBottom: theme.spacing(4),
@@ -43,25 +57,35 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
     height: '62vh',
+    [theme.breakpoints.down('sm')]: {
+      height: '100vh',
+      marginBottom:'10vh'
+    },
   },
 }));
 const VideoSuggestion = () => {
   const classes = useStyles();
   return (
+    <Grid>
+      <Grid item className={classes.textContainerSm}>
+        <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
+        <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
+      </Grid>
     <Grid container spacing={3} className={classes.videoboxContainer}>
       <Grid item className={classes.textContainer}>
+     {/* <Grid className={classes.videoboxContainerBox}> */}
         <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
         <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
       </Grid>
       <Grid item xs={12} md={12} lg={5} className={classes.videoboxContainer}>
-        <Grid item xs={5} className={classes.video}>
+        <Grid item xs={12} md={5} className={classes.video}>
           <VideoBox
             backgroundImage='https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
             heading='COACH SAMTAL'
             description='soul manifistation samtal'
           />
         </Grid>
-        <Grid item xs={5} className={classes.videos}>
+        <Grid item xs={12} md={5} className={classes.videos}>
           {data.map((data) => {
             return (
               <VideoBox
@@ -75,6 +99,8 @@ const VideoSuggestion = () => {
           })}
         </Grid>
       </Grid>
+      {/* </Grid> */}
+    </Grid>
     </Grid>
   );
 };

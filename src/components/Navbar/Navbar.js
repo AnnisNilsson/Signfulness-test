@@ -13,10 +13,10 @@ const navLinksUser = [
     title: 'Meditation',
     link: '/Meditation',
   },
-  {
-    title: 'Inställningar',
-    link: '/Installningar',
-  },
+  // {
+  //   title: 'Inställningar',
+  //   link: '/Installningar',
+  // },
   {
     title: 'Kontakt',
     link: '/Kontakt',

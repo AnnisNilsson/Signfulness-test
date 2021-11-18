@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Typography, makeStyles } from '@material-ui/core';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -53,7 +54,7 @@ const InformationBox = (props) => {
         <Grid item xs={10} className={classes.innerBox}>
           <Typography variant='h5'>{props.heading}</Typography>
           <Typography variant='body1'>{props.text}</Typography>
-          <Typography variant='subtitle1'>{props.link}</Typography>
+          <Link to={props.link}>{props.linkText}</Link>
         </Grid>
       </Grid>
       <Grid item xs={12} md={12}  className={classes.box2}></Grid>
