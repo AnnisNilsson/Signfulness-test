@@ -44,12 +44,14 @@ const useStyles = makeStyles((theme) => ({
     textContainerSm:{
       [theme.breakpoints.up('md')]: {
         display:'none',
+        
      
       
     }
   },
   space:{
     paddingBottom: theme.spacing(4),
+
   },
   videos: {
     display: 'flex',
@@ -69,7 +71,7 @@ const VideoSuggestion = () => {
     <Grid>
       <Grid item className={classes.textContainerSm}>
         <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
-        <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
+        <Typography variant='body1' className={classes.space}>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
       </Grid>
     <Grid container spacing={3} className={classes.videoboxContainer}>
       <Grid item className={classes.textContainer}>

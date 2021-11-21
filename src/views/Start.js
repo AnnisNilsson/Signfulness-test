@@ -95,7 +95,7 @@ const Start = () => {
           backgroundImage='https://images.pexels.com/photos/5345858/pexels-photo-5345858.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'
           heading='Varför meditera?'
           text='Stress, oro och ångest kommer inte utifrån. Dessa känslor och upplevelser är reaktioner på yttre faktorer. Eftersom jag själv är skaparen till mina känslor är det också jag som kan lära mig att bemästra dem och få dem att försvinna eller förstärkas. Meditation är ett bra verktyg för att lära sig att hantera sina tankar och känslor. Läs mer om de positiva effekterna av meditation och hur du kan komma igång!'
-          linkText='Läs mer om meditation här'
+          linkText='Läs mer om meditation här  ➳'
           link='/Yoga_Meditation'
         />
         <InformationBox
@@ -105,7 +105,7 @@ const Start = () => {
           backgroundImage='https://images.pexels.com/photos/5201529/pexels-photo-5201529.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
           heading='Varför yoga?'
           text='Det finns olika anledningar till att utöva yoga. Några vill bli rörligare, vissa vill minska stressa nivåerna och bli mer närvarande och andra vill få bättre kontroll på kroppen. I yogabaserade övningar ingår alltid kropp, andning och sinne. Var man lägger den största vikten beror på yogastilen. Poängen med yoga är att göra det som känns bra för just dig, därför spelar kön, ålder eller fysik ingen roll. Vill du veta mer om yoga eller hur du kan komma igång? Läs mer om yoga här?'
-          linkText='Läs mer om yoga här'
+          linkText='Läs mer om yoga här  ➳'
           link='/Yoga_Meditation'
         />
       {/* </Grid> */}

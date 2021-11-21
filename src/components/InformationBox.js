@@ -44,6 +44,11 @@ const useStyles = makeStyles((theme) => ({
       height:'40vh',
     },
   },
+  linkStyle:{
+    color: '#ffff',
+    fontWeight:'500'
+
+  }
 }));
 const InformationBox = (props) => {
   const classes = useStyles(props);
@@ -54,7 +59,7 @@ const InformationBox = (props) => {
         <Grid item xs={10} className={classes.innerBox}>
           <Typography variant='h5'>{props.heading}</Typography>
           <Typography variant='body1'>{props.text}</Typography>
-          <Link to={props.link}>{props.linkText}</Link>
+          <Link className={classes.linkStyle} to={props.link}>{props.linkText}</Link>
         </Grid>
       </Grid>
       <Grid item xs={12} md={12}  className={classes.box2}></Grid>

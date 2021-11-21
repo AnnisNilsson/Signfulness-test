@@ -11,6 +11,9 @@ import Footer from '../components/Footer/Footer';
 const useStyles = makeStyles((theme) => ({
   container: {
     marginTop: '10vh',
+    [theme.breakpoints.down('sm')]:{
+    padding:'2vh'
+    }
   },
   headerSection:{
     [theme.breakpoints.down('sm')]:{
@@ -20,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
   categoryheading: {
     textAlign: 'center',
     margin: theme.spacing(8),
+   
   },
 }));
 
