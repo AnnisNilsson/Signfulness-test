@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     height: '60vh',
     padding: '3vh',
     [theme.breakpoints.down('sm')]: {
-      height: '45vh',
+      height: '40vh',
     }
   },
   textBox: {
