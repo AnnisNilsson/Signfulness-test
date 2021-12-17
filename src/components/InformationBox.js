@@ -41,7 +41,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     [theme.breakpoints.down('sm')]: {
-      height:'40vh',
+      height:'100%',
+    display:'none',
+
     },
   },
   linkStyle:{

@@ -11,10 +11,10 @@ const useStyles = makeStyles((theme) => ({
   img: {
     objectFit: 'cover',
     backgroundPosition: 'center',
-    height: '35vh',
+    height: '60vh',
     padding: '3vh',
     [theme.breakpoints.down('sm')]: {
-      height: '20vh',
+      height: '45vh',
     }
   },
   textBox: {
