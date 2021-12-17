@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
     height: '60vh',
     padding: '3vh',
     [theme.breakpoints.down('sm')]: {
+      width: '40vh',
       height: '40vh',
     }
   },

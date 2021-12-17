@@ -51,7 +51,7 @@ const CreateAccount = (props) => {
     <form onSubmit={handleSubmit}>
       <Grid container spacing={3} className={classes.container}>
         <Grid item xs={12}>
-          <Typography variant='h4' color='primary'>
+          <Typography variant='h1' color='primary'>
             Skapa konto
           </Typography>
         </Grid>

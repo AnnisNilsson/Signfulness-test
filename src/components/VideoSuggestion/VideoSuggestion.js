@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles, Typography, Grid } from '@material-ui/core';
 import VideoBox from './VideoBox';
+import { Link } from 'react-router-dom';
 
 const data = [
   {
@@ -8,12 +9,14 @@ const data = [
       'https://images.unsplash.com/photo-1620590989038-21169e3ad84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
     heading: 'MEDITATION',
     description: 'hitta ditt inre lugn',
+    link:'/Meditation'
   },
   {
     image:
       'https://images.pexels.com/photos/3326362/pexels-photo-3326362.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     heading: 'YOGA',
     description: 'hitta din styrka',
+    link:'Yoga'
   },
 ];
 
@@ -64,6 +67,12 @@ const useStyles = makeStyles((theme) => ({
       marginBottom:'10vh'
     },
   },
+  linkStyle:{
+    underline:'none',
+    color:'black',
+    textDecoration: 'none',
+    cursor: 'pointer'
+  }
 }));
 const VideoSuggestion = () => {
   const classes = useStyles();
@@ -75,17 +84,18 @@ const VideoSuggestion = () => {
       </Grid>
     <Grid container spacing={3} className={classes.videoboxContainer}>
       <Grid item className={classes.textContainer}>
-     {/* <Grid className={classes.videoboxContainerBox}> */}
         <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
         <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
       </Grid>
       <Grid item xs={12} md={12} lg={5} className={classes.videoboxContainer}>
         <Grid item xs={12} md={5} className={classes.video}>
+        <Link to='/Kontakt' className={classes.linkStyle}>
           <VideoBox
             backgroundImage='https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
             heading='COACH SAMTAL'
             description='soul manifistation samtal'
           />
+          </Link>
         </Grid>
         <Grid item xs={12} md={5} className={classes.videos}>
           {data.map((data) => {
@@ -96,6 +106,7 @@ const VideoSuggestion = () => {
                 heading={data.heading}
                 description={data.description}
                 marginBottom={30}
+                link={data.link}
               />
             );
           })}

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Grid, Typography, makeStyles, Box, Button } from '@material-ui/core';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Video from '../components/Video';
 
 const useStyles = makeStyles((theme) => ({
@@ -78,9 +78,11 @@ const VideoView = (props) => {
               <Typography variant='body1'>{video.description}</Typography>
             </Grid>
             <Grid item xs={4} className={classes.btnBox}>
+            <Link to='/meditation'>
               <Button variant='contained' color='secondary' type='button'>
                 Tillbaka
               </Button>
+              </Link>
             </Grid>
           </Grid>
           <Grid item className={classes.videoContainer}>
