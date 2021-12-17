@@ -8,6 +8,7 @@ import SectionSecond from '../components/YogaMeditationSectionSecond/SectionSeco
 import meditation2 from '../media/meditation2.png';
 import yoga2 from '../media/yoga2.png';
 import Footer from '../components/Footer/Footer';
+import yogaDog from '../media/yoga_dog.jpeg';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -35,9 +36,7 @@ const Yoga_Meditation = () => {
       </Grid>
       <Grid item xs={12}>
         <SectionFirst
-          img={
-            'https://images.pexels.com/photos/4047042/pexels-photo-4047042.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
-          }
+          img={yogaDog}
           title='kom igång med meditation'
           description='Det kan vara svårt att komma över den första tröskeln för att börja meditera men sanningen är att alla kan meditera. Det viktigaste med meditation är att den blir av. Fem minuter om dagen räcker till att börja med och gör stor skillnad. Genom regelbunden meditation kan du lära dig att tämja dina tankar, bli gladare och mer närvarande i ditt liv. Hitta ditt sätt att meditera på, vissa gillar att ligga/ sitta lugnt och stilla andra vill ha stå eller gå. Det finns de som tycker det är skönt att ha musik på och röra sig i takt till den vissa vill ha det helt tyst och andra vill se en guidad meditation. Det finns inga rätt eller fel, det gäller bara att hitta ditt sätt och vad som får dig att slappna av och må bra.'
         />
