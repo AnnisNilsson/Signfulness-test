@@ -10,11 +10,14 @@ import Meditation from './views/Meditation';
 import KontaktaOss from './views/KontaktaOss';
 import Inspiration from './views/Inspiration';
 import Yoga_Meditation from './views/Yoga_Meditation';
+import Yoga from './views/Yoga';
 import Home from './views/Home';
 import OmOss from './views/OmOss';
 import Start from './views/Start';
 import VideoView from './views/VideoView';
 import fetchVideos from './actions';
+import VideoViewSamya from './views/VideoViewSamya';
+import VideoViewSamya2 from './views/VideoViewSamya2';
 
 function App(props) {
   const [videos, setVideos] = useState([]);
@@ -47,6 +50,9 @@ function App(props) {
             <VideoView videos={props.videos} />
           </Route>
           <Route path='/Yoga_Meditation' component={Yoga_Meditation} />
+          <Route path='/Yoga' component={Yoga} />
+          <Route path='/VideoViewSamya' component={VideoViewSamya} />
+          <Route path='/VideoViewSamya2' component={VideoViewSamya2} />
           <Route path='/OmOss' component={OmOss} />
           {/* <Route path="/:id" component={Video}/> */}
           <Route path='/Login' component={LoginViews} />

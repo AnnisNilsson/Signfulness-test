@@ -6,6 +6,8 @@ import CategoryDescription from '../components/CategoryDescription';
 import handwithplant from '../media/handwithplant.svg';
 import VideoContainers from '../components/VideoCard/VideoContainers';
 import isUserLoggedIn from '../services/authMethods';
+import VideoContainer from '../components/VideoCard/VideoContainer';
+import ocean from '../media/ocean.jpg'
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -14,6 +16,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     marginTop: theme.spacing(2),
   },
+  containerSecond: {
+    display: 'flex',
+    alignItems: 'center',
+    marginTop: theme.spacing(2),
+    justifyContent:'center'
+  },
   heading: {
     textAlign: 'center',
     margin: theme.spacing(2),
@@ -21,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
   videoContainers: {
     marginLeft: '5vw',
   },
+  videoContainersSecond:{
+    display:'flex',
+    flexDirection:'column',
+  }
 }));
 
 const Meditation = (props) => {
@@ -48,7 +60,48 @@ const Meditation = (props) => {
       <Grid item xs={12} className={classes.videoContainers}>
         <VideoContainers videos={props.videos} />
       </Grid>
+
+   
+
+      <Grid item  xs={12}>
+        <CategoryDescription
+          color='rgb(114 156 155)'
+          backgroundImage={`url(${handwithplant})`}
+          heading='Samya'
+          description='Meditationer gjorda av Samya och översatta till teckenspråk av Rahima och Anna-Klara'
+        />
+      </Grid>
+
+      <Grid item xs={12} className={classes.videoContainersSecond}>
+      <Grid container spacing={3} className={classes.containerSecond}>
+
+        <Grid md={4} xs={12} >
+          <VideoContainer
+            img={ocean}
+            heading={'historien'}
+            description={'en text om mycket mer'}
+            time={'2:10'}
+            link={'/VideoViewSamya'}
+          />
+          </Grid>
+          <Grid md={4} xs={12} >
+             <VideoContainer
+            img={ocean}
+            heading={'historien'}
+            description={'en text om mycket mer'}
+            time={'2:10'}
+            link={'/VideoViewSamya'}
+          />
+        </Grid>
+   
     </Grid>
+</Grid>
+
+
+
+    </Grid>
+
+    
   );
 };
 export default Meditation;
