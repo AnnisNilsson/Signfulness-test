@@ -61,7 +61,7 @@ const Meditation = (props) => {
         <VideoContainers videos={props.videos} />
       </Grid>
 
-   
+   {/* samyas meditationer */}
 
       <Grid item  xs={12}>
         <CategoryDescription
@@ -73,33 +73,70 @@ const Meditation = (props) => {
       </Grid>
 
       <Grid item xs={12} className={classes.videoContainersSecond}>
-      <Grid container spacing={3} className={classes.containerSecond}>
+        <Grid container spacing={3} className={classes.containerSecond}>
 
-        <Grid md={4} xs={12} >
-          <VideoContainer
-            img={ocean}
-            heading={'historien'}
-            description={'en text om mycket mer'}
-            time={'2:10'}
-            link={'/VideoViewSamya'}
-          />
-          </Grid>
           <Grid md={4} xs={12} >
-             <VideoContainer
-            img={ocean}
-            heading={'historien'}
-            description={'en text om mycket mer'}
-            time={'2:10'}
-            link={'/VideoViewSamya'}
-          />
+            <VideoContainer
+              img={ocean}
+              heading={'historien'}
+              description={'en text om mycket mer'}
+              time={'2:10'}
+              link={'/VideoViewSamya2'}
+            />
+            </Grid>
+            <Grid md={4} xs={12} >
+              <VideoContainer
+              img={ocean}
+              heading={'historien'}
+              description={'en text om mycket mer'}
+              time={'2:10'}
+              link={'/VideoViewSamya'}
+            />
+            </Grid>
+          </Grid>
         </Grid>
    
+{/* våra meditationer */}
+
+<Grid item  xs={12}>
+        <CategoryDescription
+          color='rgb(114 156 155)'
+          backgroundImage={`url(${handwithplant})`}
+          heading='Signfulness'
+          description='Meditationer gjorda av Samya och översatta till teckenspråk av Rahima och Anna-Klara'
+        />
+   </Grid>
+
+   <Grid item xs={12} className={classes.videoContainersSecond}>
+        <Grid container spacing={3} className={classes.containerSecond}>
+
+          <Grid md={4} xs={12} >
+            <VideoContainer
+              img={ocean}
+              heading={'historien'}
+              description={'en text om mycket mer'}
+              time={'2:10'}
+              link={'/VideoViewSamya2'}
+            />
+            </Grid>
+            <Grid md={4} xs={12} >
+              <VideoContainer
+              img={ocean}
+              heading={'historien'}
+              description={'en text om mycket mer'}
+              time={'2:10'}
+              link={'/VideoViewSamya'}
+            />
+            </Grid>
+          </Grid>
+        </Grid>
+
     </Grid>
-</Grid>
 
 
 
-    </Grid>
+
+ 
 
     
   );

@@ -62,7 +62,7 @@ const VideoViewSamya2 = (props) => {
           <Grid className={classes.textContainer}>
             <Grid item xs={11} className={classes.textBoxOne}>
               <Typography variant='h3'>Meditation</Typography>
-              <Typography variant='h2'>{'Samyas meditation'}</Typography>
+              <Typography variant='h2'>{'Samyas meditation ljuset'}</Typography>
             </Grid>
             <Grid item xs={8} className={classes.textBoxTwo}>
               <Typography variant='h3'>Beskrivning</Typography>
