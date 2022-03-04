@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const VideoViewSamya2 = (props) => {
+const VideoViewRahima = (props) => {
   const classes = useStyles(props);
 
   return (
@@ -62,11 +62,11 @@ const VideoViewSamya2 = (props) => {
           <Grid className={classes.textContainer}>
             <Grid item xs={11} className={classes.textBoxOne}>
               <Typography variant='h3'>Meditation</Typography>
-              <Typography variant='h2'>{'Meditations berättelse'}</Typography>
+              <Typography variant='h2'>{'En inre skogspromenad'}</Typography>
             </Grid>
             <Grid item xs={8} className={classes.textBoxTwo}>
               <Typography variant='h3'>Beskrivning</Typography>
-              <Typography variant='body1'>{'En meditation i berättande form som tar dig med på en resa med vackert buskap som skapar djupa insikter.'}</Typography>
+              <Typography variant='body1'>{'En meditation där du genom visuallisering följer en stig in i skogen för att hitta ditt inre lugn.'}</Typography>
             </Grid>
             <Grid item xs={4} className={classes.btnBox}>
             <Link to='/meditation'>
@@ -86,4 +86,4 @@ const VideoViewSamya2 = (props) => {
     </Grid>
   );
 };
-export default VideoViewSamya2;
+export default VideoViewRahima;

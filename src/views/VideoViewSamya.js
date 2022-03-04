@@ -62,11 +62,11 @@ const VideoViewSamya = (props) => {
           <Grid className={classes.textContainer}>
             <Grid item xs={11} className={classes.textBoxOne}>
               <Typography variant='h3'>Meditation</Typography>
-              <Typography variant='h2'>{'Samyas meditation'}</Typography>
+              <Typography variant='h2'>{'Lugnet är min källa'}</Typography>
             </Grid>
             <Grid item xs={8} className={classes.textBoxTwo}>
               <Typography variant='h3'>Beskrivning</Typography>
-              <Typography variant='body1'>{'En beskrivning'}</Typography>
+              <Typography variant='body1'>{'En meditation som genom visualisering hjälper dig att hitta lugn och komma i kontakt med stillheten inom dig. '}</Typography>
             </Grid>
             <Grid item xs={4} className={classes.btnBox}>
             <Link to='/meditation'>
@@ -78,7 +78,7 @@ const VideoViewSamya = (props) => {
           </Grid>
           <Grid item className={classes.videoContainer}>
             <Grid item xs={12} className={classes.video}>
-              <Video url={'https://www.youtube.com/watch?v=q0MaFtwH_M0'} />
+              <Video url={'https://www.youtube.com/watch?v=QlY5rJiR-cw&t=4s'} />
             </Grid>
           </Grid>
        

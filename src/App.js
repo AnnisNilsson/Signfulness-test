@@ -18,6 +18,8 @@ import VideoView from './views/VideoView';
 import fetchVideos from './actions';
 import VideoViewSamya from './views/VideoViewSamya';
 import VideoViewSamya2 from './views/VideoViewSamya2';
+import VideoViewRahima from './views/VideoViewRahima';
+import VideoViewAnnis from './views/VideoViewAnnis';
 
 function App(props) {
   const [videos, setVideos] = useState([]);
@@ -53,6 +55,8 @@ function App(props) {
           <Route path='/Yoga' component={Yoga} />
           <Route path='/VideoViewSamya' component={VideoViewSamya} />
           <Route path='/VideoViewSamya2' component={VideoViewSamya2} />
+          <Route path='/VideoViewRahima' component={VideoViewRahima} />
+          <Route path='/VideoViewAnnis' component={VideoViewAnnis} />
           <Route path='/OmOss' component={OmOss} />
           {/* <Route path="/:id" component={Video}/> */}
           <Route path='/Login' component={LoginViews} />

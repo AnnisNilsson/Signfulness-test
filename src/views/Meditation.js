@@ -7,7 +7,8 @@ import handwithplant from '../media/handwithplant.svg';
 import VideoContainers from '../components/VideoCard/VideoContainers';
 import isUserLoggedIn from '../services/authMethods';
 import VideoContainer from '../components/VideoCard/VideoContainer';
-import ocean from '../media/ocean.jpg'
+import desert from '../media/desert.jpg';
+import sky from '../media/himlen.jpeg';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -49,12 +50,13 @@ const Meditation = (props) => {
           MEDITATIONER
         </Typography>
       </Grid>
+
       <Grid item  xs={12}>
         <CategoryDescription
           color='rgb(114 156 155)'
           backgroundImage={`url(${handwithplant})`}
           heading='Björn Natthiko Lindeblad'
-          description='Natthiko var namnet Björn fick när han blev buddhistmunk i den thailändska skogstraditionen 1992. Han återvände till Sverige och ett liv i byxor hösten 2008. Natthiko betyder "Den som växer i visdom". Det är fortfarande polstjärnan i Björns liv.'
+          description='Natthiko var namnet Björn fick när han blev buddhistmunk i den thailändska skogstraditionen 1992. Här hittar du meditationer skapta av Björn översatta av Signfulness.'
         />
       </Grid>
       <Grid item xs={12} className={classes.videoContainers}>
@@ -68,7 +70,7 @@ const Meditation = (props) => {
           color='rgb(114 156 155)'
           backgroundImage={`url(${handwithplant})`}
           heading='Samya'
-          description='Meditationer gjorda av Samya och översatta till teckenspråk av Rahima och Anna-Klara'
+          description='Meditationer som är skapta av Samya på Loveit och som har översats till teckenspråk av Signfulness.'
         />
       </Grid>
 
@@ -77,19 +79,19 @@ const Meditation = (props) => {
 
           <Grid md={4} xs={12} >
             <VideoContainer
-              img={ocean}
-              heading={'historien'}
+              img={desert}
+              heading={'Meditations berättelse'}
               description={'en text om mycket mer'}
-              time={'2:10'}
+              time={'10:01'}
               link={'/VideoViewSamya2'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
-              img={ocean}
-              heading={'historien'}
+              img={desert}
+              heading={'Lugnet är min källa'}
               description={'en text om mycket mer'}
-              time={'2:10'}
+              time={'15:42'}
               link={'/VideoViewSamya'}
             />
             </Grid>
@@ -98,12 +100,12 @@ const Meditation = (props) => {
    
 {/* våra meditationer */}
 
-<Grid item  xs={12}>
+<Grid item xs={12}>
         <CategoryDescription
           color='rgb(114 156 155)'
           backgroundImage={`url(${handwithplant})`}
           heading='Signfulness'
-          description='Meditationer gjorda av Samya och översatta till teckenspråk av Rahima och Anna-Klara'
+          description='Meditationer som vi på Signfulness har skapat och hoppas kunna ge dig kraft och hjälpa dig att hitta ett inre lugn.'
         />
    </Grid>
 
@@ -112,20 +114,20 @@ const Meditation = (props) => {
 
           <Grid md={4} xs={12} >
             <VideoContainer
-              img={ocean}
-              heading={'historien'}
+              img={sky}
+              heading={'En fridfull skogspromenad i ditt inre'}
               description={'en text om mycket mer'}
-              time={'2:10'}
-              link={'/VideoViewSamya2'}
+              time={'10:01'}
+              link={'/VideoViewRahima'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
-              img={ocean}
-              heading={'historien'}
+              img={sky}
+              heading={'Hitta närvaron genom andningen'}
               description={'en text om mycket mer'}
               time={'2:10'}
-              link={'/VideoViewSamya'}
+              link={'/VideoViewAnnis'}
             />
             </Grid>
           </Grid>
