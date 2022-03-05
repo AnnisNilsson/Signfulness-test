@@ -33,6 +33,7 @@ const useStyles = makeStyles((theme) => ({
   videoContainersSecond:{
     display:'flex',
     flexDirection:'column',
+    textAlign: '-webkit-center',
   }
 }));
 
