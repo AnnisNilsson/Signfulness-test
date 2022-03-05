@@ -21,7 +21,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     marginTop: theme.spacing(2),
-    justifyContent:'center'
+    justifyContent:'center',
+    textAlign: '-webkit-center',
   },
   heading: {
     textAlign: 'center',
