@@ -127,7 +127,7 @@ const Meditation = (props) => {
               img={sky}
               heading={'Hitta närvaron genom andningen'}
               description={'en text om mycket mer'}
-              time={'2:10'}
+              time={'13:16'}
               link={'/VideoViewAnnis'}
             />
             </Grid>

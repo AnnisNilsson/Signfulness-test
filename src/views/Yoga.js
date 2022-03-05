@@ -8,7 +8,7 @@ import VideoContainers from '../components/VideoCard/VideoContainers';
 import isUserLoggedIn from '../services/authMethods';
 import VideoContainer from '../components/VideoCard/VideoContainer';
 import desert from '../media/desert.jpg';
-import sky from '../media/himlen.jpeg';
+import ocean from '../media/yogaocean.jpg';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -66,73 +66,71 @@ const Yoga = () => {
           <Grid md={4} xs={12} >
             <VideoContainer
               img={desert}
-              heading={'Meditations berättelse'}
-              description={'en text om mycket mer'}
-              time={'10:01'}
-              link={'/VideoViewSamya2'}
+              heading={'Ankelsträckning'}
+              time={'3:00'}
+              link={'/AnkleStrech'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
               img={desert}
-              heading={'Lugnet är min källa'}
+              heading={'Bananasana'}
               description={'en text om mycket mer'}
               time={'15:42'}
-              link={'/VideoViewSamya'}
+              link={'/Bananasana'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
               img={desert}
-              heading={'Lugnet är min källa'}
+              heading={'Caterpillar Pose'}
               description={'en text om mycket mer'}
               time={'15:42'}
-              link={'/VideoViewSamya'}
+              link={'/CaterpillarPose'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
               img={desert}
-              heading={'Lugnet är min källa'}
+              heading={'Katt som drar i svansen'}
               description={'en text om mycket mer'}
               time={'15:42'}
-              link={'/VideoViewSamya'}
+              link={'/CatPosition'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
               img={desert}
-              heading={'Lugnet är min källa'}
+              heading={'Barn positionen'}
               description={'en text om mycket mer'}
               time={'15:42'}
-              link={'/VideoViewSamya'}
+              link={'/BarnPositionen'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
               img={desert}
-              heading={'Lugnet är min källa'}
+              heading={'Dinglar'}
               description={'en text om mycket mer'}
               time={'15:42'}
-              link={'/VideoViewSamya'}
+              link={'/Dinglar'}
+            />
+            </Grid>
+            <Grid md={4} xs={12} >
+            <VideoContainer
+              img={ocean}
+              heading={'Snigel Position'}
+              time={'3:00'}
+              link={'/SnigelPosition'}
             />
             </Grid>
             <Grid md={4} xs={12} >
               <VideoContainer
               img={desert}
-              heading={'Lugnet är min källa'}
+              heading={'Tå knäböj'}
               description={'en text om mycket mer'}
               time={'15:42'}
-              link={'/VideoViewSamya'}
-            />
-            </Grid>
-            <Grid md={4} xs={12} >
-              <VideoContainer
-              img={desert}
-              heading={'Lugnet är min källa'}
-              description={'en text om mycket mer'}
-              time={'15:42'}
-              link={'/VideoViewSamya'}
+              link={'/ToePose'}
             />
             </Grid>
           </Grid>

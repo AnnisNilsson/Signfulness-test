@@ -19,7 +19,15 @@ import fetchVideos from './actions';
 import VideoViewSamya from './views/VideoViewSamya';
 import VideoViewSamya2 from './views/VideoViewSamya2';
 import VideoViewRahima from './views/VideoViewRahima';
-import VideoViewAnnis from './views/VideoViewAnnis';
+import VideoViewAnnis from './views/VideoViewAnnis'; 
+import SnigelPosition from './views/Yoga/SnigelPosition';
+import AnkleStrech from './views/Yoga/AnkleStrech';
+import Bananasana from './views/Yoga/Bananasana';
+import CaterpillarPose from './views/Yoga/CaterpillarPose';
+import CatPosition from './views/Yoga/CatPosition';
+import BarnPositionen from './views/Yoga/BarnPositionen';
+import Dinglar from './views/Yoga/Dinglar';
+import ToePose from './views/Yoga/ToePose';
 
 function App(props) {
   const [videos, setVideos] = useState([]);
@@ -56,12 +64,21 @@ function App(props) {
           <Route path='/VideoViewSamya' component={VideoViewSamya} />
           <Route path='/VideoViewSamya2' component={VideoViewSamya2} />
           <Route path='/VideoViewRahima' component={VideoViewRahima} />
-          <Route path='/VideoViewAnnis' component={VideoViewAnnis} />
+          <Route path='/VideoViewAnnis' component={VideoViewAnnis} /> 
           <Route path='/OmOss' component={OmOss} />
           {/* <Route path="/:id" component={Video}/> */}
           <Route path='/Login' component={LoginViews} />
           <Route path='/Inspiration' component={Inspiration} />
           <Route path='/Kontakt' component={KontaktaOss} />
+          <Route path='/SnigelPosition' component={SnigelPosition} />
+          <Route path='/AnkleStrech' component={AnkleStrech} />  
+          <Route path='/Bananasana' component={Bananasana} /> 
+          <Route path='/CaterpillarPose' component={CaterpillarPose} /> 
+          <Route path='/CatPosition' component={CatPosition} /> 
+          <Route path='/BarnPositionen' component={BarnPositionen} /> 
+          <Route path='/Dinglar' component={Dinglar} />  
+          <Route path='/ToePose' component={ToePose} /> 
+        
         </Switch>
       </ThemeProvider>
     </BrowserRouter>

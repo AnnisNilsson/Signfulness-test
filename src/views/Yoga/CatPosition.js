@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Grid, Typography, makeStyles, Box, Button } from '@material-ui/core';
 import { Link, useParams } from 'react-router-dom';
-import Video from '../components/Video';
+import Video from '../../components/Video';
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -54,22 +54,22 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const VideoViewAnnis = (props) => {
+const CatPosition = (props) => {
   const classes = useStyles(props);
 
   return (
     <Grid container className={classes.container}>
           <Grid className={classes.textContainer}>
             <Grid item xs={11} className={classes.textBoxOne}>
-              <Typography variant='h3'>Meditation</Typography>
-              <Typography variant='h2'>{'Hitta närvaron genom andningen'}</Typography>
+              <Typography variant='h3'>Yoga</Typography>
+              <Typography variant='h2'>{'Katt som drar i svansen'}</Typography>
             </Grid>
             <Grid item xs={8} className={classes.textBoxTwo}>
               <Typography variant='h3'>Beskrivning</Typography>
-              <Typography variant='body1'>{'En meditation där vi gemensamt andas för att förankra oss i nuet och hitta stillheten, lugnet och närvaron.'}</Typography>
+              <Typography variant='body1'>{'Föreslagen hålltid är 2-5 minuter, meridianer som påverkas av denna ställning är njure, urinblåsa, mage och mjälte. Fördelarna med positionen katt drar i svansen är att den sträcker ut framsidan av låren, bröstet och anklarna. Den här ställningen trycker lite lätt på den nedre delen av ryggen. Om det finns några problem med nedre delen av ryggen, gå in i denna ställning försiktigt och långsamt, det kanske inte är möjligt för dig att dra i foten. En rem kan vara till hjälp här.'}</Typography>
             </Grid>
             <Grid item xs={4} className={classes.btnBox}>
-            <Link to='/meditation'>
+            <Link to='/yoga'>
               <Button variant='contained' color='secondary' type='button'>
                 Tillbaka
               </Button>
@@ -78,7 +78,7 @@ const VideoViewAnnis = (props) => {
           </Grid>
           <Grid item className={classes.videoContainer}>
             <Grid item xs={12} className={classes.video}>
-              <Video url={'https://www.youtube.com/watch?v=9o9lMARZ80E&t=417s'} />
+              <Video url={'https://www.youtube.com/watch?v=cZp1_--DyHQ&t=1s'} />
             </Grid>
           </Grid>
        
@@ -86,4 +86,4 @@ const VideoViewAnnis = (props) => {
     </Grid>
   );
 };
-export default VideoViewAnnis;
+export default CatPosition;
