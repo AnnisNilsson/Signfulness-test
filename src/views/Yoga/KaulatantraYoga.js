@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const CatPosition = (props) => {
+const KaulatantraYoga = (props) => {
   const classes = useStyles(props);
 
   return (
@@ -62,11 +62,11 @@ const CatPosition = (props) => {
           <Grid className={classes.textContainer}>
             <Grid item xs={11} className={classes.textBoxOne}>
               <Typography variant='h3'>Yoga</Typography>
-              <Typography variant='h2'>{'Katt som drar i svansen'}</Typography>
+              <Typography variant='h2'>{'Kaulatantrayoga'}</Typography>
             </Grid>
             <Grid item xs={8} className={classes.textBoxTwo}>
               <Typography variant='h3'>Beskrivning</Typography>
-              <Typography variant='body1'>{'Föreslagen hålltid är 2-5 minuter, meridianer som påverkas av denna ställning är njure, urinblåsa, mage och mjälte. Fördelarna med positionen katt drar i svansen är att den sträcker ut framsidan av låren, bröstet och anklarna. Den här ställningen trycker lite lätt på den nedre delen av ryggen. Om det finns några problem med nedre delen av ryggen, gå in i denna ställning försiktigt och långsamt, det kanske inte är möjligt för dig att dra i foten. En rem kan vara till hjälp här.'}</Typography>
+              <Typography variant='body1'>{'Kaulatantrayoga är en blandning av hathayoga och yinyoga som är en av de äldre indiska yogaformerna.'}</Typography>
             </Grid>
             <Grid item xs={4} className={classes.btnBox}>
             <Link to='/yoga'>
@@ -78,7 +78,7 @@ const CatPosition = (props) => {
           </Grid>
           <Grid item className={classes.videoContainer}>
             <Grid item xs={12} className={classes.video}>
-              <Video url={'https://youtu.be/n8Y_h0-LUfY'} />
+              <Video url={'https://www.youtube.com/watch?v=Zd_EYI8y0Yc&feature=share'} />
             </Grid>
           </Grid>
        
@@ -86,4 +86,4 @@ const CatPosition = (props) => {
     </Grid>
   );
 };
-export default CatPosition;
+export default KaulatantraYoga;

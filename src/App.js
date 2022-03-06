@@ -28,6 +28,7 @@ import CatPosition from './views/Yoga/CatPosition';
 import BarnPositionen from './views/Yoga/BarnPositionen';
 import Dinglar from './views/Yoga/Dinglar';
 import ToePose from './views/Yoga/ToePose';
+import KaulatantraYoga from './views/Yoga/KaulatantraYoga';
 
 function App(props) {
   const [videos, setVideos] = useState([]);
@@ -78,6 +79,7 @@ function App(props) {
           <Route path='/BarnPositionen' component={BarnPositionen} /> 
           <Route path='/Dinglar' component={Dinglar} />  
           <Route path='/ToePose' component={ToePose} /> 
+          <Route path='/KaulatantraYoga' component={KaulatantraYoga} /> 
         
         </Switch>
       </ThemeProvider>

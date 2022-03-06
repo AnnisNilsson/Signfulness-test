@@ -56,7 +56,7 @@ const Yoga = () => {
           color='rgb(114 156 155)'
           backgroundImage={`url(${handwithplant})`}
           heading='Yinyoga'
-          description='Yinyoga är en återhämtande och terapeutisk yogastil som handlar om att stilla kropp och sinne. Det är en motvikt till yangbaserade, mer fysiskt krävande yogaformer.'
+          description='Yinyoga är en återhämtande och terapeutisk yogastil som handlar om att stilla kropp och sinne. Det är en motvikt till yangbaserade, mer fysiskt krävande yogaformer. Varje video är en yogaposition. Se videorna och sätt ihop din egen yogasession utifrån vilka positioner som känns bra för din kropp.'
         />
       </Grid>
 
@@ -120,7 +120,7 @@ const Yoga = () => {
             <VideoContainer
               img={ocean}
               heading={'Snigel Position'}
-              time={'3:00'}
+              time={'2:04'}
               link={'/SnigelPosition'}
             />
             </Grid>
@@ -129,15 +129,35 @@ const Yoga = () => {
               img={desert}
               heading={'Tå knäböj'}
               description={'en text om mycket mer'}
-              time={'15:42'}
+              time={'2:23'}
               link={'/ToePose'}
             />
             </Grid>
           </Grid>
         </Grid>
-  
-    
-    </Grid>
+       
+        <Grid item  className={classes.heading} spacing={3} xs={12}>
+        <CategoryDescription
+          color='rgb(114 156 155)'
+          backgroundImage={`url(${handwithplant})`}
+          heading='Yoga med Valeria'
+          description='Valeria är utbildad inom yoga och andning och hon har flera års erfarenhet inom yoga.'
+        />
+      </Grid>
+      
+      <Grid md={4} xs={12} >
+              <VideoContainer
+              img={desert}
+              heading={'Kaulatantra yoga'}
+              description={'en text om mycket mer'}
+              time={'12:05'}
+              link={'/KaulatantraYoga'}
+            />
+            </Grid>
+
+          </Grid>
+       
+   
   );
 };
 
