@@ -78,7 +78,7 @@ const VideoViewAnnis = (props) => {
           </Grid>
           <Grid item className={classes.videoContainer}>
             <Grid item xs={12} className={classes.video}>
-              <Video url={'https://www.youtube.com/watch?v=9o9lMARZ80E&t=417s'} />
+              <Video url={'https://www.youtube.com/watch?v=75yB2E12cF4&t=14s'} />
             </Grid>
           </Grid>
        
