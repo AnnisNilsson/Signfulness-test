@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
     opacity: 0.9,
     boxSizing: 'content-box',
-    margin: 'auto auto -10px auto',
+    margin: 'auto auto -40px auto',
     boxShadow: '10px 14px 24px rgba(0, 0, 0, 0.25)',
     padding: theme.spacing(1),
   },

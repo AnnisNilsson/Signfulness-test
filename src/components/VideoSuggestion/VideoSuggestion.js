@@ -2,26 +2,30 @@ import React from 'react';
 import { makeStyles, Typography, Grid } from '@material-ui/core';
 import VideoBox from './VideoBox';
 import { Link } from 'react-router-dom';
+import ballong from '../../media/ballong.jpg';
+import yoga from '../../media/Yoga-himlen.JPG';
+import rahima from '../../media/rahima2.png';
+import annis from '../../media/annis2.png';
+
 
 const data = [
   {
-    image:
-      'https://images.unsplash.com/photo-1620590989038-21169e3ad84c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80',
-    heading: 'MEDITATION',
-    description: 'hitta ditt inre lugn',
-    link:'/Meditation'
-  },
-  {
-    image:
-      'https://images.pexels.com/photos/3326362/pexels-photo-3326362.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+    image:rahima,
     heading: 'YOGA',
     description: 'hitta din styrka',
     link:'Yoga'
+  },
+  {
+    image:annis,
+    heading: 'MEDITATION',
+    description: 'hitta ditt inre lugn',
+    link:'/Meditation'
   },
 ];
 
 const useStyles = makeStyles((theme) => ({
   videoboxContainer: {
+    paddingTop:'5vh',
     display: 'flex',
     flexFlow: 'row nowrap',
     alignItems: 'center',
@@ -39,7 +43,8 @@ const useStyles = makeStyles((theme) => ({
   },
   textContainer: {
     textAlign: 'center',
-    marginLeft:theme.spacing(8),
+    marginLeft:theme.spacing(3),
+    width:'45%',
     [theme.breakpoints.down('sm')]: {
       display:'none'
     },
@@ -79,21 +84,22 @@ const VideoSuggestion = () => {
   return (
     <Grid>
       <Grid item className={classes.textContainerSm}>
-        <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
-        <Typography variant='body1' className={classes.space}>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
+        <Typography variant='h2' className={classes.space}>Kul att just du är här!</Typography>
+        <Typography variant='body1' className={classes.space}>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra. Ge kroppen lite rörelse och lösa upp knutar genom yoga eller hitta stillhet och svaren i ditt inre genom meditation. Om du har några funderingar hör av dig till oss så ska vi försöka hjälpa dig!</Typography>
       </Grid>
     <Grid container spacing={3} className={classes.videoboxContainer}>
       <Grid item className={classes.textContainer}>
-        <Typography variant='h2' className={classes.space}>Vad känner du för?</Typography>
-        <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra.</Typography>
+        <Typography variant='h2' className={classes.space}>Kul att just du är här!</Typography>
+        <Typography variant='body1'>Lyssna till din kropp och känn efter vad du vill göra idag för att må bra. Ge kroppen lite rörelse och lösa upp knutar genom yoga eller hitta stillhet och svaren i ditt inre genom meditation. Om du har några funderingar hör av dig till oss så ska vi försöka hjälpa dig!
+</Typography>
       </Grid>
       <Grid item xs={12} md={12} lg={5} className={classes.videoboxContainer}>
         <Grid item xs={12} md={5} className={classes.video}>
         <Link to='/Kontakt' className={classes.linkStyle}>
           <VideoBox
-            backgroundImage='https://images.pexels.com/photos/3560168/pexels-photo-3560168.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500'
+            backgroundImage={ballong}
             heading='COACH SAMTAL'
-            description='soul manifistation samtal'
+            description='soul manifistation'
           />
           </Link>
         </Grid>

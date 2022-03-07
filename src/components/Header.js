@@ -77,8 +77,7 @@ const Header = (props) => {
           <Typography variant='h2'>{props.name}</Typography>
         </div>
         <Typography variant='body1' color='textPrimary'>
-          Lorem ipsum dolor sit amet.
-        </Typography>
+Ta tid bara för dig för att må bra, det förtjänar du!        </Typography>
       </Grid>
     </Grid>
   );

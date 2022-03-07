@@ -36,7 +36,7 @@ const Home = () => {
       {/* <Triangle top='125vh' bottom={0} /> */}
       <Grid item xs={12} className={classes.headerSection}>
         <Header
-          heading='Godmorgon'
+          heading='Välkomen hit!'
           // img="https://images.unsplash.com/photo-1488711500009-f9111944b1ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1052&q=80"
           img={start}
        />
