@@ -60,7 +60,7 @@ const Meditation = (props) => {
           description='Natthiko var namnet Björn fick när han blev buddhistmunk i den thailändska skogstraditionen 1992. Här hittar du meditationer skapta av Björn översatta av Signfulness.'
         />
       </Grid>
-      <Grid item xs={12} className={classes.videoContainers}>
+      <Grid item xs={12} className={classes.container}>
         <VideoContainers videos={props.videos} />
       </Grid>
 

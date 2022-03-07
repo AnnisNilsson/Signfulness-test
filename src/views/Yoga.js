@@ -144,6 +144,9 @@ const Yoga = () => {
           description='Valeria är utbildad inom yoga och andning och hon har flera års erfarenhet inom yoga.'
         />
       </Grid>
+
+      <Grid item xs={12} className={classes.videoContainers}>
+        <Grid container spacing={3} className={classes.containerSecond}>
       
       <Grid md={4} xs={12} >
               <VideoContainer
@@ -155,6 +158,8 @@ const Yoga = () => {
             />
             </Grid>
 
+          </Grid>
+          </Grid>
           </Grid>
        
    
