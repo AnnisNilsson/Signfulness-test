@@ -78,7 +78,7 @@ const CaterpillarPose = (props) => {
           </Grid>
           <Grid item className={classes.videoContainer}>
             <Grid item xs={12} className={classes.video}>
-              <Video url={'https://www.youtube.com/watch?v=cZp1_--DyHQ&t=1s'} />
+              <Video url={'https://www.youtube.com/watch?v=rPye_9ncSwM'} />
             </Grid>
           </Grid>
        
