@@ -95,13 +95,14 @@ const VideoSuggestion = () => {
       </Grid>
       <Grid item xs={12} md={12} lg={5} className={classes.videoboxContainer}>
         <Grid item xs={12} md={5} className={classes.video}>
-        <Link to='/Kontakt' className={classes.linkStyle}>
+        {/* <Link to='/Kontakt' className={classes.linkStyle}> */}
           <VideoBox
             backgroundImage={ballong}
             heading='COACH SAMTAL'
             description='soul manifistation'
+            link='/Kontakt'
           />
-          </Link>
+          {/* </Link> */}
         </Grid>
         <Grid item xs={12} md={5} className={classes.videos}>
           {data.map((data) => {
