@@ -67,9 +67,9 @@ const ContactCard = (props) => {
           <Typography variant='body1'>
             <span className={classes.bold}>Mail:</span> {props.mail}
           </Typography>
-          <Typography variant='body1'>
+          {/* <Typography variant='body1'>
             <span className={classes.bold}>Number:</span> {props.number}{' '}
-          </Typography>
+          </Typography> */}
         </Grid>
       </Grid>
     </Grid>

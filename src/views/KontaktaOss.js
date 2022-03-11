@@ -24,17 +24,15 @@ const KontaktaOss = (props) => {
       <Grid item className={classes.box}>
         <ContactCard
         img={rahima}
-          mail='rahima@htomail.com'
-          number='0735 0484 373'
+          mail='signsformind@gmail.com'
           name='Rahima Asadova'
-          description='beskrivning'
+          description='Soul manifistation coach'
         />
         <ContactCard
         img={annis}
-          mail='rahima@htomail.com'
-          number='0735 0484 373'
+          mail='signsformind@gmail.com'
           name='Anna-Klara Vifell'
-          description='beskrivning'
+          description='Soul manifistation coach'
         />
       </Grid>
       <Footer/>
