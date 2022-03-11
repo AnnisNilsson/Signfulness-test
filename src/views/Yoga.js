@@ -67,7 +67,7 @@ const Yoga = () => {
             <VideoContainer
               img={desert}
               heading={'Ankelsträckning'}
-              time={'3:00'}
+              time={'2:04'}
               link={'/AnkleStrech'}
             />
             </Grid>
@@ -76,7 +76,7 @@ const Yoga = () => {
               img={desert}
               heading={'Bananasana'}
               description={'en text om mycket mer'}
-              time={'15:42'}
+              time={'1:54'}
               link={'/Bananasana'}
             />
             </Grid>
@@ -85,7 +85,7 @@ const Yoga = () => {
               img={desert}
               heading={'Caterpillar Pose'}
               description={'en text om mycket mer'}
-              time={'15:42'}
+              time={'2:01'}
               link={'/CaterpillarPose'}
             />
             </Grid>
@@ -94,7 +94,7 @@ const Yoga = () => {
               img={desert}
               heading={'Katt som drar i svansen'}
               description={'en text om mycket mer'}
-              time={'15:42'}
+              time={'2:04'}
               link={'/CatPosition'}
             />
             </Grid>
@@ -103,7 +103,7 @@ const Yoga = () => {
               img={desert}
               heading={'Barn positionen'}
               description={'en text om mycket mer'}
-              time={'15:42'}
+              time={'2:44'}
               link={'/BarnPositionen'}
             />
             </Grid>
@@ -112,7 +112,7 @@ const Yoga = () => {
               img={desert}
               heading={'Dinglar'}
               description={'en text om mycket mer'}
-              time={'15:42'}
+              time={'2:30'}
               link={'/Dinglar'}
             />
             </Grid>
