@@ -26,13 +26,13 @@ const KontaktaOss = (props) => {
         img={rahima}
           mail='signsformind@gmail.com'
           name='Rahima Asadova'
-          description='Soul manifistation coach'
+          description='Soul manifestation coach'
         />
         <ContactCard
         img={annis}
           mail='signsformind@gmail.com'
           name='Anna-Klara Vifell'
-          description='Soul manifistation coach'
+          description='Soul manifestation coach'
         />
       </Grid>
       <Footer/>

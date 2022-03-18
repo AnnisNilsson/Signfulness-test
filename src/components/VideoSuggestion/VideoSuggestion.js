@@ -99,7 +99,7 @@ const VideoSuggestion = () => {
           <VideoBox
             backgroundImage={ballong}
             heading='COACH SAMTAL'
-            description='soul manifistation'
+            description='soul manifestation'
             link='/Kontakt'
           />
           {/* </Link> */}
